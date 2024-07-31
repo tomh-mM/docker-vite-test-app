@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # by commenting out the volumes, HMR will not work  
+    volumes:
+      - .:/app # syncs the local directory with /app in the container
+      - /app/node_modules # ensures container's node_modules are used
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
