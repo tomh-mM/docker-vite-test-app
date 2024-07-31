@@ -1,3 +1,9 @@
+# Run the test app
+- Clone the repository
+- Run `npm install` in the project root
+- Ensure that Docker Desktop is running and run `docker-compose up -d --build`
+- Access the app via the container running on [localhost:3000](http://localhost:3000/)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
